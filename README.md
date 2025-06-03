@@ -10,15 +10,11 @@
 - Windows: https://docs.docker.com/desktop/setup/install/windows-install/
 - Ubuntu: https://docs.docker.com/engine/install/ubuntu/
 
-6. After installing Docker, in the terminal of the root direcory run to build the image:
+6. After installing Docker, in the terminal of the root direcory run to build:
 
-- "docker build -f backend/Dockerfile -t express-docker-app ."
+- "docker-compose up --build"
 
-7. After the build is complete, in the same terminal of the root direcory run the container:
-
-- "docker run -p 3000:3000 express-docker-app"
-
-8. To check if the code is running, open the browser and access the port:
+7. After the build is complete, to check if the backend code is running, open the browser and access the port for backend:
 
 - "http://localhost:3000/api/student"
 - The output displayed there would be:
@@ -27,6 +23,11 @@
 "name": "Trilochan Adhikari",
 "studentId" : "s225389846"
 }
+
+8. To check if the frontend is running, open the browser and access the port:
+
+- "http://localhost:8085/"
+- The output displayed there would be the login page.
 
 9. To check if the docker container is running:
 

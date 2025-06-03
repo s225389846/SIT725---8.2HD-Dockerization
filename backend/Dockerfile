@@ -5,13 +5,13 @@ FROM node:18
 WORKDIR /app
 
 # Copy dependency definitions
-COPY package*.json ./
+COPY ../package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the rest of the application
-COPY backend/. .
+COPY backend/ .
 
 # Expose app port
 EXPOSE 3000
